@@ -1,120 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--адаптация под IE и Edje-->
-    <meta name="goit-markup-hw-01/" content="первое ДЗ">
-    <title>Homework</title>
+<head> <!--общие настройки страницы-->
+    <meta charset="UTF-8"> <!--кодировка сайта-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--адаптация под IE и Edje-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title> <!--Название вкладки браузера-->
 </head>
 
 <body>
+    
+    <!-- Шапка -->
+    <!-- header>a>img^ul>(li>a)*4 - формула быстрого создания ст руктуры -->
     <header>
-        <a href="./">WebStudia</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Студия</a>
-                </li>
-                <li>
-                    <a href="">Портфолио</a>
-                </li>
-                <li>
-                    <a href="contacs.html">Контакты</a>
-                </li>
-            </ul>
+        <a href="./"><img src="./images/logo.svg" alt="логотип бфрбершоп" width="69" height="56"></a>
+       <nav>  <!--меню навигации по сайту-->
+        <ul>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Услуги и цены</a></li>
+            <li><a href="">Мастера</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
         </nav>
-        <ul>
-            <li>    
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a> 
-            </li>
-            <li>    
-                <a href="tel:+380961111111">+380961111111</a>
-            </li>
-        </ul>
+        <a href="tel:+380441111111">+38 044 111 11 11</a>
+        <a href="">Онлайн-запись</a>
     </header>
-    <!--Основа-->
+    <!--Основа, тело сайта-->
     <main>
-        <section>
-            <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button>Заказать услугу</button>
-        </section>
-        <section> <!--Создаёт отдельную секцию (блок) из элементов внутри него-->
-            <ul>
-                <li>
-                    <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p>Идейные соображения,а также началоповседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3>ПУНКТУАЛЬНОСТЬ</h3>
-                    <p>Задача организации,в особенности же рамки и место обучения кадров влечёт за собой.</p>
-                </li>
-                <li>
-                    <h3>ПЛАНИРОВАНИЕ</h3>
-                    <p>Равным образом консультация с широким активом в значительной степениобусловливает.</p>
-                </li>
-                <li>
-                    <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                    <p>Значимость этих проблем настолько очевидна,что реализация плановых заданий.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Чем мы занимаемся</h2>
+    <!-- section>p+h1+p - формула -->
+    <section>
+        <p lang="en">A hair salon for men in Kyiv</p>
+        <h1>BarberShop</h1>
+        <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer noopener" lang="en">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noreferrer noopener" lang="en">Youtube</a></li>
+        </ul>
+    </section>
+    <!-- section>ul>(li>img)*2^div>p+h2+p*2+button{Онлайн-запись} -->
+    <section>
+        <ul>
+            <li><img src="./images/about_us/img-1.png" width="270" height="445" alt="Барбер за работой"></li>
+            <li><img src="./images/about_us/img-2.png" width="270" height="445" alt="Модная причёска 2021"></li>
+        </ul>
+        <div>
+            <p>О нас</p>
+            <h2>Лучший Барбершоп твоего города</h2>
+            <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p>Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+            <button type="button">Онлайн-запись</button>
+        </div>
+    </section>
+    <!-- section>p+h2+(ul>(li>span*2)*4)*2 -->
+    <section>
+        <p>Проведи время в компании лучших мастеров</p>
+        <h2>Услуги и цены</h2>
+        <ul>
+            <li><span>Мужская стрижка</span><span>от 300 грн.</span></li>
+            <li><span>Стрижка бороды</span><span>от 200 грн.</span></li>
+            <li><span>Стрижка усов</span><span>от 200 грн.</span></li>
+            <li><span>Бритье опасной бритвой</span><span>от 200 грн.</span></li>
+        </ul>
+        <a href="">Онлайн-запись</a>
+        <ul>
+            <li><span>Cтрижка у стажера</span><span>от 50 грн.</span></li>
+            <li><span>Стрижка под насадку</span><span>от 200 грн.</span></li>
+            <li><span>Детская стрижка (до 12 лет)</span>от 300 грн.<span></span></li>
+            <li><span>Камуфлирование седины</span><span>от 200 грн.</span></li>
+        </ul>
+    </section>
+    <section>
         <ul>
             <li>
-                <img src="./images/img-4.jpg" alt="набор кода на клавиатуре перед планшетом и монитором" width="370" />
+                <span>600 <sup>+</sup></span>
+                <p>Довольных клиентов в день</p>
             </li>
             <li>
-                <img src="./images/img-6.jpg" alt="настройка мобильного гаджета через ноутбук" width="370" />
+                <span>50<sup>+</sup></span>
+                <p>Наград за отличный сервис</p>
             </li>
             <li>
-                <img src="./images/img-5.jpg" alt="выбор цвета на экране планшета" width="370" />
+                <span>20<sup>+</sup></span>
+                <p>Лучших мастеров Киева</p>
+            </li>
+            <li>
+                <span>100<sup>+</sup></span>
+                <p>Подарков постоянным клиентам</p>
             </li>
         </ul>
-        </section>
+        <div>
+                <p>старая традиционная школа</p>
+                <h2>Почему приходят именно к нам?</h2>
+                <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+        </div>
+    </section>
+    <!-- section>p+h2+ul>(li>img[src="./images/masters/img$.png"]+h3+p)*3 -->
+    <section>
+        <p>для настоящих ценителей атмосферы</p>
+        <h2>Наши мастера</h2>
+        <ul>
+            <li>
+                <img src="./images/masters/img1.png" alt="Barber John Smith"  width="370" height="346">
+                <h3 lang="en">John Smith</h3>
+                <p lang="en">Extreme Barber</p>
+            </li>
+            <li>
+                <img src="./images/masters/img2.png" alt="Barber Michele Doe" width="370" height="346">
+                <h3 lang="en">Michele Doe</h3>
+                <p lang="en">Extreme Barber</p>
+            </li>
+            <li>
+                <img src="./images/masters/img3.png" alt="Barber Alan Black" width="370" height="346">
+                <h3 lang="en">Alan Black</h3>
+                <p lang="en">Extreme Barber</p>
+            </li>
+        </ul>
+    </section>
+    <!-- section>p+h2+ul>(li>img[src="./images/portfolio/rectangle-2$"])*4  -->
+    <section>
+        <p>На латинском языке “барба” означает “борода”</p>
+        <h2>Портфолио</h2>
+        <ul>
+            <li><img src="./images/portfolio/rectangle-25.png" width="270" height="360" alt=""></li>
+            <li><img src="./images/portfolio/rectangle-26.png" width="270" height="360" alt=""></li>
+            <li><img src="./images/portfolio/rectangle-27.png" width="270" height="360" alt=""></li>
+            <li><img src="./images/portfolio/rectangle-28.png" width="270" height="360" alt=""></li>
+        </ul>
+    </section>
+    <div><section>
+        <h2></h2>
+    </section>
+    <section>
+        <h2>Контакты</h2>
+        <address>
+        <ul>
+            <li><a href="https://goo.gl/maps/CYx5kcv8Lht27NrEA" target="_blank" rel="noopener noreferrer">ул. Васильковая, 7А Киев, 08132</a></li>
+            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+        </ul>
+        </address>
         <section>
-            <h2>Наша команда</h2>
-                <ul> <!--Список в виде точки, <ol> - список с цифрами-->
-                    <li>
-                        <img src="./images/img-3.jpg" alt="Игорь Демьяненко Product Designer" width="270" /> <!--Ссылка на картинку, подпись и её размер-->
-                        <h3>Игорь Демьяненко</h3>
-                        <p>Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="./images/img-2.jpg" alt="Ольга Репина Frontend Developer" width="270" />
-                        <h3>Ольга Репина</h3>
-                        <p>Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="./images/img-1.jpg" alt="Николай Тарасов Marketing" width="270" />
-                        <h3>Николай Тарасов</h3>
-                        <p>Marketing</p>
-                    </li>
-                    <li>
-                        <img src="./images/img.jpg" alt="Михаил Ермаков UI Designer" width="270" />
-                        <h3>Михаил Ермаков</h3>
-                        <p>UI Designer</p>
-                    </li>
-                </ul>
+            <h3>Время работы</h3>
+            <p>Ежедневно с 9:00 до 22:00</p>
         </section>
+    </section>
+</div>
     </main>
+    <!-- Дно -->
     <footer>
-        <address><!--адрес-->
-            <a href="./">WebStudio</a> <!--ссылка на главную страницу "./" обозначает корневую папку и отправляет на главную страницу-->
-            <ul>
-                <li>
-                    г. Киев, пр-т Леси Украинки, 26 <!--адрес-->
-                </li>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a> <!--Активный имэйл-->
-                </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a> <!--Активный телефон-->
-                </li>
-            </ul>
-            </address>
+        <p>&copy; Copyright 2020</p>
+        <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer noopener" lang="en">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noreferrer noopener" lang="en">Youtube</a></li>
+        </ul>
     </footer>
 </body>
 
